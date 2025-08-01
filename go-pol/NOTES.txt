@@ -1,0 +1,16 @@
+
+
+. Create staking token
+. Create staking vault
+. Create incentive token(s)
+.. GRIZZ :)
+.. bbBERA?
+
+'Active' Vault
+
+. Needs BGT emissions - i.e. cutting board(s) pointing at it
+. Staked users - staking token
+. Owner + users get BGT
+. Active incentives
+. Validator(s) + booster(s) get incentives
+.. requires config'd bribe boost daemon
