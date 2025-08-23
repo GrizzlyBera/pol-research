@@ -7,7 +7,9 @@ require (
 	github.com/calbera/go-pyth-client v1.0.4
 	github.com/ethereum/go-ethereum v1.14.7
 	github.com/stretchr/testify v1.9.0
+	github.com/supranational/blst v0.3.14
 	github.com/umbracle/ethgo v0.1.3
+
 )
 
 require (
@@ -227,7 +229,6 @@ require (
 	github.com/stbenjam/no-sprintf-host-port v0.1.1 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
 	github.com/subosito/gotenv v1.4.1 // indirect
-	github.com/supranational/blst v0.3.11 // indirect
 	github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7 // indirect
 	github.com/t-yuki/gocover-cobertura v0.0.0-20180217150009-aaee18c8195c // indirect
 	github.com/tdakkota/asciicheck v0.2.0 // indirect
