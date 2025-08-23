@@ -52,17 +52,6 @@ library BLS {
         return abi.decode(output, (G1Point));
     }
 
-//    /// @notice G1MUL operation
-//    /// @param point G1 point
-//    /// @param scalar Scalar to multiply the point by
-//    /// @return result Resulted G1 point
-//    function G1Mul(G1Point memory point, uint256 scalar) internal view returns (G1Point memory result) {
-//        // G1MUL address is 0x0c
-//        (bool success, bytes memory output) = address(0x0c).staticcall(abi.encode(point, scalar));
-//        require(success, "G1MUL failed");
-//        return abi.decode(output, (G1Point));
-//    }
-
     /// @notice G1MSM operation
     /// @param points Array of G1 points
     /// @param scalars Array of scalars to multiply the points by
@@ -90,17 +79,6 @@ library BLS {
         require(success, "G2ADD failed");
         return abi.decode(output, (G2Point));
     }
-
-//    /// @notice G2MUL operation
-//    /// @param point G2 point
-//    /// @param scalar Scalar to multiply the point by
-//    /// @return result Resulted G2 point
-//    function G2Mul(G2Point memory point, uint256 scalar) internal view returns (G2Point memory result) {
-//        // G2MUL address is 0x0f
-//        (bool success, bytes memory output) = address(0x0f).staticcall(abi.encode(point, scalar));
-//        require(success, "G2MUL failed");
-//        return abi.decode(output, (G2Point));
-//    }
 
     /// @notice G2MSM operation
     /// @param points Array of G2 points
@@ -149,7 +127,6 @@ library BLS {
     /// @param element Fp2 element
     /// @return result Resulted G2 point
     function MapFp2ToG2(Fp2 memory element) internal view returns (G2Point memory result) {
-
         bytes memory input = abi.encode(element);
         require(input.length==128, "input is invalid");
 
@@ -158,7 +135,6 @@ library BLS {
         require(success, "MAP_FP2_TO_G2 failed");
 
         require(output.length==256, "output is invalid");
-
         return abi.decode(output, (G2Point));
     }
 

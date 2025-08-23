@@ -41,12 +41,10 @@ contract DepositVerifierTest is Test {
 
     function test_HashToCurve() public view {
         bytes32 testMsg = hex"deadbeef";
-        bytes memory bytesMessage = bytes.concat(testMsg);
-        require(bytesMessage.length==32);
 
-        BLS.G2Point memory g2A = BLS.hashToCurveG2(bytesMessage);
+        BLS.G2Point memory g2A = dv.hashToCurve(testMsg);
 
-        // derived from external test that uses blst HashToG2 to check for compat
+        // derived from external test (TestBlstCompat) that uses blst HashToG2 to check for compat
         bytes memory expectSerialized = hex"000000000000000000000000000000000c41e5b6b7269ad84e0b7f84a38c4394c27ad84fb1b1297e7cc4a4d327a9579bc467b39a0730ead7e1047a76939fb1dc0000000000000000000000000000000012789f23883babd08d0dc6ffa786a5e75becdf9b243b00c301207085ec3f361c63bc9788b454869749d3b3ca459da5ea00000000000000000000000000000000079b97db530439bdf31b7b73081a4a66a99699bc5783dea78db421d7412f74c58710c4247f5082b2e8d830f00925527c0000000000000000000000000000000008647dc0d71669aae8a6498fd16090f9ca47562116d00755d15a37476125a3ba49cbf995120376dda25cff5309588492";
         require(expectSerialized.length==256);
 
