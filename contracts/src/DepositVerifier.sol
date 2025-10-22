@@ -162,7 +162,6 @@ contract DepositVerifier {
         return BLS.Pairing(g1Points, g2Points);
     }
 
-    // 1,040,464,384
     function verifyAndDeposit(
         bytes calldata publicKey,
         bytes calldata withdrawalCredentials,

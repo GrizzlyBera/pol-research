@@ -61,7 +61,7 @@ func TestDeployVault(t *testing.T) {
 	//require.NoError(t, err)
 	//println(mockAddr.String())
 
-	vaultFactory, err := chain.LoadContract(client, "RewardVaultFactory", k, chain.BepoliaRewardVaultFactory)
+	vaultFactory, err := chain.LoadContract(client, "RewardVaultFactoryAddr", k, chain.RewardVaultFactoryAddr)
 	require.NoError(t, err)
 
 	//     function createRewardVault(address stakingToken) external returns (address) {
