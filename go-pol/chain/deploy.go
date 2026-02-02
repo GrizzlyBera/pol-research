@@ -29,7 +29,7 @@ func getBuildArtifact(name string) (art *compiler.Artifact, err error) {
 		name = name + ".json"
 	}
 	var jsonBytes []byte
-	if jsonBytes, err = os.ReadFile(filepath.Join("../contracts/out", name)); err != nil {
+	if jsonBytes, err = os.ReadFile(filepath.Join("../abi", name)); err != nil {
 		if jsonBytes, err = os.ReadFile(filepath.Join("./abi", name)); err != nil {
 			return
 		}

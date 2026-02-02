@@ -79,7 +79,7 @@ func processValidator(valResult gjson.Result, summary *valACBSummary) {
 
 func TestBasicACBAnalysis(t *testing.T) {
 
-	fileName := "./validators-query-result2.json"
+	fileName := "./validators-query-result1.json"
 	jsonBytes, err := os.ReadFile(fileName)
 	require.NoError(t, err)
 
