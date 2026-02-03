@@ -11,10 +11,10 @@ import (
 
 var BeraTestnet = x402.ChainConfig{
 	NetworkID:      "bepolia",
-	USDCAddress:    "0x406f530cc683E668d74F76d13da1Ec5E8cE582ea",
-	Decimals:       6,
-	EIP3009Name:    "bxUSDC",
-	EIP3009Version: "2",
+	USDCAddress:    "0xFCBD14DC51f0A4d49d5E53C2E0950e0bC26d0Dce",
+	Decimals:       18,
+	EIP3009Name:    "Honey",
+	EIP3009Version: "1",
 }
 
 func TestBasicServer(t *testing.T) {
@@ -27,7 +27,8 @@ func TestBasicServer(t *testing.T) {
 
 	// Configure middleware
 	config := &x402http.Config{
-		FacilitatorURL:      "https://x402.testnet.berachain.com/",
+		// FacilitatorURL:      "https://x402.testnet.berachain.com/",
+		FacilitatorURL:      "http://localhost:8081",
 		PaymentRequirements: []x402.PaymentRequirement{requirement},
 	}
 

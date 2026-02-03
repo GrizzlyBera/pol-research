@@ -70,6 +70,7 @@ github.com/GaijinEntertainment/go-exhaustruct/v3 v3.2.0 h1:sATXp1x6/axKxz2Gjxv8M
 github.com/GaijinEntertainment/go-exhaustruct/v3 v3.2.0/go.mod h1:Nl76DrGNJTA1KJ0LePKBw/vznBX1EHbAZX8mwjR82nI=
 github.com/GrizzlyBera/x402-go v0.0.0-20251102141342-afb0155aba0d h1:+gtZhVAS0RZGQ0kvbu5M6ctq+kbNR1npVA084MWFg00=
 github.com/GrizzlyBera/x402-go v0.0.0-20251102141342-afb0155aba0d/go.mod h1:srAvV9FosjBiqrclF15thrQbz0fVVfNXtMcqD0e1hKU=
+github.com/GrizzlyBera/x402-go v0.0.0-20251113212609-e9ac556bfb83 h1:RKW5y/kcVTt8Sshu+q2jKO1pnKbiwYjKjIYDliL/KF8=
 github.com/GrizzlyBera/x402-go v0.0.0-20251113212609-e9ac556bfb83/go.mod h1:srAvV9FosjBiqrclF15thrQbz0fVVfNXtMcqD0e1hKU=
 github.com/Masterminds/semver/v3 v3.2.1 h1:RN9w6+7QoMeJVGyfmbcgs28Br8cvmnucEXnY0rYXWg0=
 github.com/Masterminds/semver/v3 v3.2.1/go.mod h1:qvl/7zhW3nngYb5+80sSMF+FG2BjYrf8m9wsX0PNOMQ=

@@ -1,7 +1,6 @@
 package bx402
 
 import (
-	"github.com/mark3labs/x402-go"
 	x402http "github.com/mark3labs/x402-go/http"
 	"github.com/mark3labs/x402-go/signers/evm"
 	"github.com/stretchr/testify/require"
@@ -12,7 +11,7 @@ import (
 func TestBasicClient(t *testing.T) {
 
 	// Create USDC token config using helper
-	token := x402.NewUSDCTokenConfig(BeraTestnet, 1)
+	// token := x402.NewUSDCTokenConfig(BeraTestnet, 1)
 
 	skHex := os.Getenv("SK_HEX_DEV1")
 
@@ -20,7 +19,8 @@ func TestBasicClient(t *testing.T) {
 	signer, err := evm.NewSigner(
 		evm.WithPrivateKey(skHex),
 		evm.WithNetwork("bepolia"),
-		evm.WithToken(token.Address, token.Symbol, token.Decimals),
+		// evm.WithToken(token.Address, token.Symbol, token.Decimals),
+		evm.WithToken(BeraTestnet.USDCAddress, BeraTestnet.EIP3009Name, 18),
 	)
 	require.NoError(t, err)
 
